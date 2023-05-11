@@ -7,6 +7,7 @@ import SourcifyMenu from "./SourcifyMenu";
 import { RuntimeContext } from "./useRuntime";
 import { useGenericSearch } from "./search/search";
 import Otter from "./otter.png";
+import ExplorerLogo from "./logo_block_explorer.webp";
 
 const CameraScanner = lazy(() => import("./search/CameraScanner"));
 
@@ -22,14 +23,13 @@ const Header: FC = () => {
         <Link className="self-center" to="/">
           <div className="text-2xl text-link-blue font-title font-bold flex items-center space-x-2">
             <img
-              className="rounded-full"
-              src={Otter}
+              src={ExplorerLogo}
               width={32}
               height={32}
               alt="An otter scanning"
               title="An otter scanning"
             />
-            <span>Otterscan</span>
+            <span>Bitfinity Block Explorer</span>
           </div>
         </Link>
         <div className="flex items-baseline space-x-3">
