@@ -48,7 +48,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            us-central1-docker.pkg.dev/dfx-server/dfx-containers/otterscan:v1.30.0-modified
+            us-central1-docker.pkg.dev/dfx-server/dfx-containers/otterscan
 
       - name: Build and push Docker images
         uses: docker/build-push-action@v3
